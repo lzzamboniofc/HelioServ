@@ -4,93 +4,188 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HelioServ | Energia Solar em Itu/SP — Venda, Instalação e Manutenção</title>
   <meta name="description"
-    content="HelioServ — há mais de 14 anos com venda, instalação e manutenção de energia solar e automação de apoio elétrico para boilers em Itu, SP.">
-  <meta property="og:title" content="HelioServ | Energia Solar">
-  <meta property="og:description" content="Mais de 14 anos de experiência em energia solar. Venda, instalação, manutenção e soluções de apoio elétrico para boilers em Itu, SP.">
-  <meta property="og:type" content="website">
+    content="HelioServ: há mais de 14 anos com venda, instalação e manutenção de energia solar e automação de apoio elétrico para boilers em Itu e região. Simule o tamanho do seu sistema.">
   <meta name="theme-color" content="#0c2530">
-  <title>HelioServ | Energia Solar</title>
+  <script>document.documentElement.classList.add('js')</script>
+  <!-- Quando o site tiver domínio próprio, descomente e ajuste:
+  <link rel="canonical" href="https://www.seudominio.com.br/"> -->
+
+  <!-- Open Graph / redes sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="HelioServ">
+  <meta property="og:title" content="HelioServ | Energia Solar em Itu/SP">
+  <meta property="og:description"
+    content="Mais de 14 anos de experiência em energia solar. Venda, instalação, manutenção e apoio elétrico para boilers em Itu e região.">
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="image"
+    href="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1920&q=80">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"HelioServ","telephone":"+55 11 99967-0155","address":{"@type":"PostalAddress","addressLocality":"Itu","addressRegion":"SP","addressCountry":"BR"},"sameAs":["https://www.facebook.com/HelioServItu","https://www.instagram.com/helioserv/"]}</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "HelioServ",
+    "description": "Venda, instalação e manutenção de sistemas de energia solar e automação de apoio elétrico para boilers.",
+    "image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+55 11 97581-9253",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Itu",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "areaServed": ["Itu", "Salto", "Indaiatuba", "Cabreúva", "Porto Feliz", "Sorocaba"],
+    "contactPoint": [
+      { "@type": "ContactPoint", "telephone": "+55 11 97581-9253", "name": "Hélio", "contactType": "sales", "availableLanguage": "Portuguese" },
+      { "@type": "ContactPoint", "telephone": "+55 11 99967-0155", "name": "Lucimara", "contactType": "customer service", "availableLanguage": "Portuguese" }
+    ],
+    "sameAs": ["https://www.facebook.com/HelioServItu", "https://www.instagram.com/helioserv/"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Quanto posso economizar com energia solar?", "acceptedAnswer": { "@type": "Answer", "text": "Não existe um percentual único para todos os projetos. A economia depende de consumo, tarifa, dimensionamento, geração, regras aplicáveis e características do imóvel. Por isso, o ideal é realizar uma análise individual." } },
+      { "@type": "Question", "name": "Energia solar funciona em dias nublados?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Os módulos podem gerar energia com radiação difusa, porém a geração tende a ser menor do que em condições de maior incidência solar." } },
+      { "@type": "Question", "name": "Quanto tempo leva a instalação?", "acceptedAnswer": { "@type": "Answer", "text": "O prazo varia conforme porte, complexidade, disponibilidade de materiais e etapas administrativas do projeto. A previsão correta é informada após a análise." } },
+      { "@type": "Question", "name": "Preciso trocar meu telhado?", "acceptedAnswer": { "@type": "Answer", "text": "Não necessariamente. É importante avaliar as condições da cobertura e da estrutura antes da instalação para definir a solução adequada." } },
+      { "@type": "Question", "name": "Como funciona a homologação?", "acceptedAnswer": { "@type": "Answer", "text": "Sistemas conectados à rede passam por procedimentos junto à distribuidora conforme as regras vigentes. As etapas e documentos dependem do projeto e da concessionária." } },
+      { "@type": "Question", "name": "Vocês fazem manutenção de sistemas já instalados?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A HelioServ atua também com manutenção e suporte. O atendimento começa com uma avaliação do sistema e da necessidade apresentada." } },
+      { "@type": "Question", "name": "Vocês trabalham com boilers?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A HelioServ oferece automação de apoio elétrico para boilers, com avaliação técnica da instalação para definir a solução adequada." } }
+    ]
+  }
+  </script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
-  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
-    <div class="container"><a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#inicio"><i
-          class="bi bi-sun-fill text-warning fs-3"></i>HelioServ</a><button class="navbar-toggler" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-label="Abrir menu"><span
-          class="navbar-toggler-icon"></span></button>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top" aria-label="Navegação principal">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#inicio">
+        <i class="bi bi-sun-fill text-warning fs-3" aria-hidden="true"></i>HelioServ
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav mx-auto">
-          <li><a class="nav-link" href="#inicio">Início</a></li>
-          <li><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li><a class="nav-link" href="#servicos">Serviços</a></li>
-          <li><a class="nav-link" href="#simulador">Simulador</a></li>
-          <li><a class="nav-link" href="#projetos">Projetos</a></li>
-          <li><a class="nav-link" href="#produtos">Soluções</a></li>
-          <li><a class="nav-link" href="#faq">FAQ</a></li>
-        </ul><a class="btn btn-warning rounded-pill fw-semibold px-3 js-whatsapp"
-          data-message="Olá, gostaria de solicitar um orçamento de energia solar." href="#">Solicitar orçamento</a>
+          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#simulador">Simulador</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produtos">Soluções</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn-warning rounded-pill fw-semibold px-3 js-whatsapp"
+          data-message="Olá, gostaria de solicitar um orçamento de energia solar." href="https://wa.me/5511975819253"
+          target="_blank" rel="noopener">Solicitar orçamento</a>
       </div>
     </div>
   </nav>
+
   <header id="inicio" class="hero d-flex align-items-center">
     <div class="hero-overlay"></div>
     <div class="hero-glow"></div>
     <div class="container position-relative text-white">
-      <div class="col-xl-8 hero-copy reveal"><span class="eyebrow"><i class="bi bi-lightning-charge-fill"></i> Há mais de 14 anos transformando sol em economia</span>
+      <div class="col-xl-8 hero-copy reveal">
+        <span class="eyebrow"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i> Há mais de 14 anos
+          transformando sol em economia</span>
         <h1 class="display-2 fw-bold mt-3">Energia solar com <span>experiência de verdade.</span></h1>
-        <p class="lead my-4">Venda, instalação e manutenção de sistemas de energia solar, com atendimento próximo em Itu e soluções elétricas de apoio para boilers.</p>
-        <div class="d-flex flex-wrap gap-3"><a href="#simulador"
-            class="btn btn-warning btn-lg rounded-pill fw-semibold px-4">Simule sua economia <i
-              class="bi bi-arrow-down-right ms-2"></i></a><a href="#servicos"
-            class="btn btn-glass btn-lg rounded-pill px-4">Conheça as soluções</a></div>
-        <div class="hero-proof mt-5"><span><i class="bi bi-check2-circle"></i> 14+ anos de experiência</span><span><i
-              class="bi bi-check2-circle"></i> Instalação e manutenção</span><span><i class="bi bi-check2-circle"></i>
-            Atendimento direto</span></div>
+        <p class="lead my-4">Venda, instalação e manutenção de sistemas de energia solar, com atendimento próximo em Itu
+          e região e soluções elétricas de apoio para boilers.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#simulador" class="btn btn-warning btn-lg rounded-pill fw-semibold px-4">Simule seu sistema <i
+              class="bi bi-arrow-down-right ms-2" aria-hidden="true"></i></a>
+          <a href="#servicos" class="btn btn-glass btn-lg rounded-pill px-4">Conheça as soluções</a>
+        </div>
+        <ul class="hero-proof list-unstyled mt-5 mb-0">
+          <li><i class="bi bi-check2-circle" aria-hidden="true"></i> 14+ anos de experiência</li>
+          <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Instalação e manutenção</li>
+          <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Atendimento direto com o técnico</li>
+        </ul>
       </div>
-    </div><a class="scroll-cue" href="#sobre"><span>Role para explorar</span><i class="bi bi-chevron-down"></i></a>
+    </div>
+    <a class="scroll-cue" href="#sobre"><span>Role para explorar</span><i class="bi bi-chevron-down"
+        aria-hidden="true"></i></a>
   </header>
-  <main><section class="trust-strip"><div class="container"><div class="trust-grid"><div><strong>14+</strong><span>anos de atuação</span></div><div><strong>Solar</strong><span>venda e instalação</span></div><div><strong>Suporte</strong><span>manutenção técnica</span></div><div><strong>Boilers</strong><span>apoio elétrico automatizado</span></div></div></div></section>
+
+  <main id="conteudo">
+    <section class="trust-strip" aria-label="Destaques">
+      <div class="container">
+        <ul class="trust-grid list-unstyled mb-0">
+          <li><strong>14+</strong><span>anos de atuação</span></li>
+          <li><strong>Solar</strong><span>venda e instalação</span></li>
+          <li><strong>Suporte</strong><span>manutenção técnica</span></li>
+          <li><strong>Boilers</strong><span>apoio elétrico automatizado</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
     <section id="sobre" class="section">
       <div class="container">
-        <div class="row g-5 align-items-center">
+        <div class="row g-4 g-lg-5 align-items-center">
           <div class="col-lg-6 reveal">
-            <div class="photo-frame"><img
-                src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1100&q=85"
-                alt="Sistema de energia solar" class="img-fluid">
-              <div class="floating-card"><i class="bi bi-sun-fill"></i>
+            <div class="photo-frame">
+              <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1100&q=80"
+                alt="Painéis solares instalados sobre telhado" class="img-fluid" width="1100" height="733"
+                loading="lazy" decoding="async">
+              <div class="floating-card"><i class="bi bi-sun-fill" aria-hidden="true"></i>
                 <div><strong>Solução completa</strong><small>Do estudo ao pós-venda</small></div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 reveal"><span class="section-kicker">Sobre a HelioServ</span>
+          <div class="col-lg-6 reveal">
+            <span class="section-kicker">Sobre a HelioServ</span>
             <h2 class="section-title">Energia solar sem complicação.</h2>
-            <p class="lead text-secondary">Com mais de 14 anos de atuação, a HelioServ trabalha com venda, instalação e manutenção de sistemas de energia solar, unindo experiência prática e atendimento próximo.</p>
-            <p class="text-secondary">A empresa também desenvolve automação de apoio elétrico para boilers, integrando energia e controle para tornar o uso do aquecimento mais prático e eficiente. Cada solução parte da necessidade real do cliente.</p>
+            <p class="lead text-secondary">Com mais de 14 anos de atuação, a HelioServ trabalha com venda, instalação e
+              manutenção de sistemas de energia solar, unindo experiência prática e atendimento próximo.</p>
+            <p class="text-secondary">A empresa também desenvolve automação de apoio elétrico para boilers, integrando
+              energia e controle para tornar o uso do aquecimento mais prático e eficiente. Cada solução parte da
+              necessidade real do cliente.</p>
             <div class="row g-3 mt-3">
               <div class="col-sm-6">
-                <div class="mini-feature"><i class="bi bi-rulers"></i>
+                <div class="mini-feature"><i class="bi bi-rulers" aria-hidden="true"></i>
                   <div><strong>14+ anos no mercado</strong><small>Experiência construída em campo.</small></div>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="mini-feature"><i class="bi bi-headset"></i>
+                <div class="mini-feature"><i class="bi bi-headset" aria-hidden="true"></i>
                   <div><strong>Atendimento próximo</strong><small>Contato direto do orçamento ao suporte.</small></div>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="mini-feature"><i class="bi bi-shield-check"></i>
-                  <div><strong>Instalação e manutenção</strong><small>Do novo sistema ao cuidado pós-venda.</small></div>
+                <div class="mini-feature"><i class="bi bi-shield-check" aria-hidden="true"></i>
+                  <div><strong>Instalação e manutenção</strong><small>Do novo sistema ao cuidado pós-venda.</small>
+                  </div>
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="mini-feature"><i class="bi bi-graph-up-arrow"></i>
-                  <div><strong>Soluções para boilers</strong><small>Automação de apoio elétrico sob medida.</small></div>
+                <div class="mini-feature"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i>
+                  <div><strong>Soluções para boilers</strong><small>Automação de apoio elétrico sob medida.</small>
+                  </div>
                 </div>
               </div>
             </div>
@@ -98,15 +193,53 @@
         </div>
       </div>
     </section>
+
+    <!-- SERVIÇOS (conteúdo no HTML para ser indexado; detalhes do modal em main.js) -->
     <section id="servicos" class="section bg-soft">
       <div class="container">
-        <div class="section-heading text-center reveal"><span class="section-kicker">Soluções HelioServ</span>
+        <div class="section-heading text-center reveal">
+          <span class="section-kicker">Soluções HelioServ</span>
           <h2 class="section-title">Energia solar do projeto à manutenção.</h2>
-          <p class="text-secondary">Clique em uma solução para entender como podemos ajudar.</p>
+          <p class="text-secondary">Clique em uma solução para ver o que está incluído.</p>
         </div>
-        <div class="row g-4 mt-3" id="serviceGrid"></div>
+        <div class="row g-4 mt-3">
+          <div class="col-md-6 col-xl-3 reveal">
+            <button type="button" class="service-card" data-service="instalacao">
+              <span class="icon-box"><i class="bi bi-sun-fill" aria-hidden="true"></i></span>
+              <h3>Instalação de sistemas</h3>
+              <p>Solução fotovoltaica planejada para o perfil do imóvel.</p>
+              <span class="card-link">Ver detalhes <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+            </button>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal">
+            <button type="button" class="service-card" data-service="manutencao">
+              <span class="icon-box"><i class="bi bi-tools" aria-hidden="true"></i></span>
+              <h3>Manutenção e suporte</h3>
+              <p>Cuidados para preservar segurança e desempenho do sistema.</p>
+              <span class="card-link">Ver detalhes <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+            </button>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal">
+            <button type="button" class="service-card" data-service="boilers">
+              <span class="icon-box"><i class="bi bi-thermometer-sun" aria-hidden="true"></i></span>
+              <h3>Automação para boilers</h3>
+              <p>Apoio elétrico automatizado para complementar e controlar o aquecimento.</p>
+              <span class="card-link">Ver detalhes <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+            </button>
+          </div>
+          <div class="col-md-6 col-xl-3 reveal">
+            <button type="button" class="service-card" data-service="equipamentos">
+              <span class="icon-box"><i class="bi bi-battery-charging" aria-hidden="true"></i></span>
+              <h3>Equipamentos e soluções</h3>
+              <p>Componentes selecionados conforme a necessidade de cada sistema.</p>
+              <span class="card-link">Ver detalhes <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- PROCESSO -->
     <section id="processo" class="section process-section">
       <div class="container">
         <div class="row align-items-end mb-5">
@@ -118,80 +251,101 @@
               projeto.</p>
           </div>
         </div>
-        <div class="process-line">
-          <div class="process-item reveal"><i class="bi bi-chat-dots"></i>
+        <ol class="process-line list-unstyled">
+          <li class="process-item reveal"><i class="bi bi-chat-dots" aria-hidden="true"></i>
             <h3>Diagnóstico</h3>
             <p>Entendemos consumo, objetivo e características do imóvel.</p>
-          </div>
-          <div class="process-item reveal"><i class="bi bi-pencil-square"></i>
+          </li>
+          <li class="process-item reveal"><i class="bi bi-pencil-square" aria-hidden="true"></i>
             <h3>Projeto</h3>
             <p>Definição da solução e dimensionamento adequado ao cenário.</p>
-          </div>
-          <div class="process-item reveal"><i class="bi bi-file-earmark-check"></i>
+          </li>
+          <li class="process-item reveal"><i class="bi bi-file-earmark-check" aria-hidden="true"></i>
             <h3>Homologação</h3>
             <p>Preparação da documentação e etapas aplicáveis junto à distribuidora.</p>
-          </div>
-          <div class="process-item reveal"><i class="bi bi-tools"></i>
+          </li>
+          <li class="process-item reveal"><i class="bi bi-tools" aria-hidden="true"></i>
             <h3>Instalação</h3>
             <p>Montagem do sistema e organização dos componentes.</p>
-          </div>
-          <div class="process-item reveal"><i class="bi bi-activity"></i>
+          </li>
+          <li class="process-item reveal"><i class="bi bi-activity" aria-hidden="true"></i>
             <h3>Acompanhamento</h3>
             <p>Orientação para acompanhar a geração e suporte pós-venda.</p>
-          </div>
-        </div>
+          </li>
+        </ol>
       </div>
     </section>
+
+    <!-- SIMULADOR -->
     <section id="simulador" class="section simulator-section">
       <div class="container">
         <div class="simulator-shell reveal">
           <div class="row g-0">
-            <div class="col-lg-5 simulator-copy"><span class="section-kicker text-warning">Simulador solar</span>
-              <h2>Quanto sua conta pode representar ao longo do ano?</h2>
-              <p>Informe sua conta média mensal para visualizar uma projeção simples e iniciar uma análise
-                personalizada.</p>
-              <div class="estimate-note"><i class="bi bi-info-circle"></i><span>Esta simulação é ilustrativa. Economia,
-                  geração, investimento e retorno dependem de análise técnica, tarifa, consumo, local e características
-                  do sistema.</span></div>
+            <div class="col-lg-5 simulator-copy">
+              <span class="section-kicker text-warning">Simulador solar</span>
+              <h2>De que tamanho seria o seu sistema?</h2>
+              <p>Informe sua conta média mensal e veja uma estimativa do consumo, da potência do sistema, do número de
+                placas e da área de telhado necessária.</p>
+              <div class="estimate-note"><i class="bi bi-info-circle" aria-hidden="true"></i>
+                <span>Estimativa de referência, considerando irradiação média da região de Itu, ligação bifásica e
+                  placas de 580 W. O dimensionamento final depende de análise técnica do consumo, da tarifa, do
+                  telhado, do sombreamento e da distribuidora.</span>
+              </div>
             </div>
-            <div class="col-lg-7 simulator-form"><label for="billRange" class="form-label fw-semibold">Valor médio da
-                conta de energia</label>
-              <div class="range-value">R$ <span id="billValue">500</span><small>/mês</small></div><input type="range"
-                class="form-range" min="150" max="5000" step="50" value="500" id="billRange">
-              <div class="range-labels"><span>R$ 150</span><span>R$ 5.000+</span></div>
-              <div class="estimate-grid">
-                <div><small>Sua conta média</small><strong id="monthlyBill">R$ 500/mês</strong></div>
-                <div><small>Próximo passo</small><strong>Análise técnica HelioServ</strong></div>
-              </div><button class="btn btn-warning btn-lg w-100 fw-bold js-sim-whatsapp"><i
-                  class="bi bi-whatsapp me-2"></i>Enviar meu consumo para análise</button><small
-                class="d-block text-secondary mt-3">O valor informado serve para iniciar o atendimento. A estimativa de geração e economia é feita após análise do consumo e do imóvel.</small>
+            <div class="col-lg-7 simulator-form">
+              <label for="billRange" class="form-label fw-semibold">Valor médio da conta de energia</label>
+              <output class="range-value" for="billRange">R$ <span id="billValue">500</span><small>/mês</small></output>
+              <input type="range" class="form-range" min="150" max="5000" step="50" value="500" id="billRange">
+              <div class="range-labels" aria-hidden="true"><span>R$ 150</span><span>R$ 5.000+</span></div>
+
+              <div class="tariff-row">
+                <label for="tariff">Tarifa com impostos (R$/kWh)</label>
+                <input type="number" id="tariff" class="form-control" min="0.5" max="2" step="0.01" value="1.00"
+                  inputmode="decimal">
+              </div>
+
+              <div class="estimate-grid" aria-live="polite">
+                <div><small>Consumo estimado</small><strong id="estKwh">—</strong></div>
+                <div><small>Potência do sistema</small><strong id="estKwp">—</strong></div>
+                <div><small>Placas solares</small><strong id="estPanels">—</strong></div>
+                <div><small>Área de telhado</small><strong id="estArea">—</strong></div>
+              </div>
+              <button type="button" class="btn btn-warning btn-lg w-100 fw-bold js-sim-whatsapp"><i
+                  class="bi bi-whatsapp me-2" aria-hidden="true"></i>Enviar minha simulação para análise</button>
+              <small class="d-block sim-footnote mt-3">A HelioServ confirma o dimensionamento e a economia após analisar
+                sua conta e o imóvel. Valores não constituem proposta comercial.</small>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="cta-band">
       <div class="container">
         <div class="row align-items-center g-4">
           <div class="col-lg-8"><span>Seu consumo merece uma análise real.</span>
             <h2>Descubra qual solução faz sentido para o seu imóvel.</h2>
           </div>
-          <div class="col-lg-4 text-lg-end"><a href="#contato" class="btn btn-light btn-lg rounded-pill px-4">Solicitar
-              análise <i class="bi bi-arrow-right ms-2"></i></a></div>
+          <div class="col-lg-4 text-lg-end"><a href="#contato" class="btn btn-dark btn-lg rounded-pill px-4">Solicitar
+              análise <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </section>
+
+    <!-- PROJETOS -->
     <section id="projetos" class="section">
       <div class="container">
         <div class="section-heading reveal"><span class="section-kicker">Projetos</span>
           <h2 class="section-title">Soluções para diferentes perfis de consumo.</h2>
-          <p class="text-secondary">Residências, comércios e propriedades podem receber soluções dimensionadas conforme consumo, estrutura e objetivo. As imagens abaixo são ilustrativas até a inclusão do portfólio real da HelioServ.</p>
+          <p class="text-secondary">Residências, comércios e propriedades rurais podem receber soluções dimensionadas
+            conforme consumo, estrutura e objetivo.</p>
         </div>
         <div class="row g-4 mt-3">
           <div class="col-lg-4 reveal">
-            <article class="case-card"><img
-                src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=900&q=82"
-                alt="Exemplo visual de projeto solar residencial">
+            <article class="case-card">
+              <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=900&q=80"
+                alt="Telhado residencial com painéis solares" width="900" height="1200" loading="lazy"
+                decoding="async">
               <div class="case-overlay"><span>Aplicação</span>
                 <h3>Energia solar residencial</h3>
                 <p>Dimensionamento pensado para o perfil de consumo e as características do imóvel.</p>
@@ -199,9 +353,9 @@
             </article>
           </div>
           <div class="col-lg-4 reveal">
-            <article class="case-card"><img
-                src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=900&q=82"
-                alt="Exemplo visual de projeto solar comercial">
+            <article class="case-card">
+              <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=900&q=80"
+                alt="Painéis solares em área comercial" width="900" height="1200" loading="lazy" decoding="async">
               <div class="case-overlay"><span>Aplicação</span>
                 <h3>Energia solar comercial</h3>
                 <p>Soluções para reduzir o peso da energia na operação de empresas e comércios.</p>
@@ -209,9 +363,9 @@
             </article>
           </div>
           <div class="col-lg-4 reveal">
-            <article class="case-card"><img
-                src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=82"
-                alt="Exemplo visual de aplicação rural">
+            <article class="case-card">
+              <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
+                alt="Propriedade rural" width="900" height="1200" loading="lazy" decoding="async">
               <div class="case-overlay"><span>Aplicação</span>
                 <h3>Soluções sob medida</h3>
                 <p>Projeto e suporte definidos a partir das condições técnicas e da necessidade do cliente.</p>
@@ -221,128 +375,378 @@
         </div>
       </div>
     </section>
+
+    <!-- SOLUÇÕES / COMPONENTES (todos os painéis no HTML; abas só alternam a visibilidade) -->
     <section id="produtos" class="section bg-soft">
       <div class="container">
         <div class="section-heading text-center reveal"><span class="section-kicker">Tecnologia</span>
           <h2 class="section-title">Componentes que formam uma solução.</h2>
-          <p class="text-secondary">Em vez de um catálogo genérico, apresentamos as principais categorias de um sistema
-            solar.</p>
+          <p class="text-secondary">Conheça as principais partes de um sistema solar.</p>
         </div>
-        <div class="solution-tabs reveal"><button class="solution-tab active" data-solution="paineis"><i
-              class="bi bi-grid-3x3-gap"></i>Painéis</button><button class="solution-tab" data-solution="inversores"><i
-              class="bi bi-lightning"></i>Inversores</button><button class="solution-tab" data-solution="protecao"><i
-              class="bi bi-shield-check"></i>Proteções</button><button class="solution-tab"
-            data-solution="estruturas"><i class="bi bi-bounding-box"></i>Estruturas</button><button class="solution-tab"
-            data-solution="boilers"><i class="bi bi-thermometer-sun"></i>Boilers</button></div>
-        <div id="solutionContent" class="solution-content reveal"></div>
+        <div class="solution-tabs reveal" role="tablist" aria-label="Componentes do sistema">
+          <button class="solution-tab active" role="tab" id="tab-paineis" aria-controls="panel-paineis"
+            aria-selected="true"><i class="bi bi-grid-3x3-gap" aria-hidden="true"></i>Painéis</button>
+          <button class="solution-tab" role="tab" id="tab-inversores" aria-controls="panel-inversores"
+            aria-selected="false" tabindex="-1"><i class="bi bi-lightning" aria-hidden="true"></i>Inversores</button>
+          <button class="solution-tab" role="tab" id="tab-protecao" aria-controls="panel-protecao"
+            aria-selected="false" tabindex="-1"><i class="bi bi-shield-check" aria-hidden="true"></i>Proteções</button>
+          <button class="solution-tab" role="tab" id="tab-estruturas" aria-controls="panel-estruturas"
+            aria-selected="false" tabindex="-1"><i class="bi bi-bounding-box" aria-hidden="true"></i>Estruturas</button>
+          <button class="solution-tab" role="tab" id="tab-boilers" aria-controls="panel-boilers"
+            aria-selected="false" tabindex="-1"><i class="bi bi-thermometer-sun" aria-hidden="true"></i>Boilers</button>
+        </div>
+        <div class="solution-content reveal">
+          <div class="solution-inner" role="tabpanel" id="panel-paineis" aria-labelledby="tab-paineis">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1100&q=80"
+              alt="Painéis fotovoltaicos" width="1100" height="733" loading="lazy" decoding="async">
+            <div class="solution-text"><span class="section-kicker">Solução</span>
+              <h3>Painéis fotovoltaicos</h3>
+              <p class="text-secondary">Responsáveis por converter a radiação solar em energia elétrica. A escolha
+                depende do dimensionamento e das condições do projeto.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Diferentes potências e tecnologias</li>
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Seleção conforme dimensionamento</li>
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Aplicações residenciais e comerciais</li>
+              </ul>
+              <button type="button" class="btn btn-outline-dark rounded-pill mt-2 js-whatsapp"
+                data-message="Olá, gostaria de informações sobre painéis fotovoltaicos.">Consultar esta solução <i
+                  class="bi bi-arrow-right ms-2" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <div class="solution-inner" role="tabpanel" id="panel-inversores" aria-labelledby="tab-inversores" hidden>
+            <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?auto=format&fit=crop&w=1100&q=80"
+              alt="Inversor solar" width="1100" height="733" loading="lazy" decoding="async">
+            <div class="solution-text"><span class="section-kicker">Solução</span>
+              <h3>Inversores e microinversores</h3>
+              <p class="text-secondary">Convertem a energia gerada pelos módulos para uso na instalação elétrica e podem
+                oferecer recursos de monitoramento.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Configuração conforme o sistema</li>
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Opções centralizadas ou distribuídas</li>
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Monitoramento conforme equipamento</li>
+              </ul>
+              <button type="button" class="btn btn-outline-dark rounded-pill mt-2 js-whatsapp"
+                data-message="Olá, gostaria de informações sobre inversores e microinversores.">Consultar esta solução
+                <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <div class="solution-inner" role="tabpanel" id="panel-protecao" aria-labelledby="tab-protecao" hidden>
+            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1100&q=80"
+              alt="Quadro de proteção elétrica" width="1100" height="733" loading="lazy" decoding="async">
+            <div class="solution-text"><span class="section-kicker">Solução</span>
+              <h3>Proteções elétricas</h3>
+              <p class="text-secondary">Elementos de proteção fazem parte de uma instalação organizada e devem ser
+                especificados de acordo com o projeto.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Proteções aplicáveis ao sistema</li>
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Organização dos circuitos</li>
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Dimensionamento técnico</li>
+              </ul>
+              <button type="button" class="btn btn-outline-dark rounded-pill mt-2 js-whatsapp"
+                data-message="Olá, gostaria de informações sobre proteções elétricas.">Consultar esta solução <i
+                  class="bi bi-arrow-right ms-2" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <div class="solution-inner" role="tabpanel" id="panel-estruturas" aria-labelledby="tab-estruturas" hidden>
+            <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1100&q=80"
+              alt="Estrutura de fixação de painéis" width="1100" height="733" loading="lazy" decoding="async">
+            <div class="solution-text"><span class="section-kicker">Solução</span>
+              <h3>Estruturas de fixação</h3>
+              <p class="text-secondary">A fixação deve considerar o tipo de cobertura, a disposição dos módulos e as
+                condições do local.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Soluções para diferentes coberturas</li>
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Posicionamento planejado</li>
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Materiais adequados à aplicação</li>
+              </ul>
+              <button type="button" class="btn btn-outline-dark rounded-pill mt-2 js-whatsapp"
+                data-message="Olá, gostaria de informações sobre estruturas de fixação.">Consultar esta solução <i
+                  class="bi bi-arrow-right ms-2" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <div class="solution-inner" role="tabpanel" id="panel-boilers" aria-labelledby="tab-boilers" hidden>
+            <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=1100&q=80"
+              alt="Sistema de aquecimento de água" width="1100" height="733" loading="lazy" decoding="async">
+            <div class="solution-text"><span class="section-kicker">Solução</span>
+              <h3>Automação de apoio para boilers</h3>
+              <p class="text-secondary">A HelioServ também atua com automação de apoio elétrico para boilers, oferecendo
+                uma solução complementar para o controle do aquecimento.</p>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Apoio elétrico automatizado</li>
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Integração com a instalação existente</li>
+                <li><i class="bi bi-check2-circle me-2" aria-hidden="true"></i>Avaliação técnica antes da configuração</li>
+              </ul>
+              <button type="button" class="btn btn-outline-dark rounded-pill mt-2 js-whatsapp"
+                data-message="Olá, gostaria de informações sobre automação de apoio para boilers.">Consultar esta
+                solução <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="depoimentos" class="section">
+
+    <!-- CONFIANÇA: sem depoimentos inventados; direciona para as redes reais -->
+    <section id="confianca" class="section">
       <div class="container">
-        <div class="review-placeholder reveal">
-          <div><span class="section-kicker">Confiança</span>
-            <h2 class="section-title">A experiência do cliente deve falar por si.</h2>
-            <p class="text-secondary">Mais de 14 anos de atuação são parte importante da história da HelioServ. Esta área fica preparada para receber avaliações reais, sem inventar nomes ou depoimentos.</p>
+        <div class="trust-panel reveal">
+          <div>
+            <span class="section-kicker">Confiança</span>
+            <h2 class="section-title">Veja nosso trabalho de perto.</h2>
+            <p class="text-secondary mb-4">São mais de 14 anos instalando e mantendo sistemas em Itu e região.
+              Acompanhe obras, bastidores e avaliações de clientes nas nossas redes.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="https://www.instagram.com/helioserv/" target="_blank" rel="noopener"
+                class="btn btn-dark rounded-pill px-4"><i class="bi bi-instagram me-2" aria-hidden="true"></i>Ver obras no
+                Instagram</a>
+              <a href="https://www.facebook.com/HelioServItu/reviews" target="_blank" rel="noopener"
+                class="btn btn-outline-dark rounded-pill px-4"><i class="bi bi-star me-2" aria-hidden="true"></i>Avaliações
+                no Facebook</a>
+            </div>
           </div>
-          <div class="review-mock"><i class="bi bi-chat-quote-fill"></i>
-            <p>Experiência construída em instalação, manutenção e relacionamento próximo.</p><span>HelioServ • Itu/SP</span>
-          </div>
+          <ul class="trust-list list-unstyled mb-0">
+            <li><i class="bi bi-person-check" aria-hidden="true"></i>
+              <div><strong>Atendimento pelo próprio técnico</strong><small>Você fala com quem projeta e instala.</small>
+              </div>
+            </li>
+            <li><i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <div><strong>Empresa local</strong><small>Base em Itu, perto para visita técnica e suporte.</small></div>
+            </li>
+            <li><i class="bi bi-wrench-adjustable" aria-hidden="true"></i>
+              <div><strong>Pós-venda de verdade</strong><small>Manutenção também para sistemas já instalados.</small>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
+
+    <!-- FAQ (conteúdo no HTML para SEO) -->
     <section id="faq" class="section bg-soft">
       <div class="container">
-        <div class="row g-5">
+        <div class="row g-4 g-lg-5">
           <div class="col-lg-5 reveal"><span class="section-kicker">Dúvidas frequentes</span>
             <h2 class="section-title">Antes de investir, é normal ter perguntas.</h2>
             <p class="text-secondary">Reunimos respostas gerais para facilitar o primeiro contato. O cenário final
-              depende de análise individual.</p><a href="#contato" class="btn btn-dark rounded-pill px-4">Ainda tenho
-              uma dúvida</a>
+              depende de análise individual.</p>
+            <a href="#contato" class="btn btn-dark rounded-pill px-4">Ainda tenho uma dúvida</a>
           </div>
           <div class="col-lg-7 reveal">
-            <div class="accordion accordion-flush faq" id="faqAccordion"></div>
+            <div class="accordion accordion-flush faq" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq0" aria-expanded="true" aria-controls="faq0">Quanto posso economizar com energia
+                    solar?</button></h3>
+                <div id="faq0" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Não existe um percentual único para todos os projetos. A economia depende
+                    de consumo, tarifa, dimensionamento, geração, regras aplicáveis e características do imóvel. Por
+                    isso, o ideal é realizar uma análise individual.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">Energia
+                    solar funciona em dias nublados?</button></h3>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Sim. Os módulos podem gerar energia com radiação difusa, porém a geração
+                    tende a ser menor do que em condições de maior incidência solar.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Quanto
+                    tempo leva a instalação?</button></h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">O prazo varia conforme porte, complexidade, disponibilidade de materiais e
+                    etapas administrativas do projeto. A previsão correta é informada após a análise.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">Preciso
+                    trocar meu telhado?</button></h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Não necessariamente. É importante avaliar as condições da cobertura e da
+                    estrutura antes da instalação para definir a solução adequada.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">Como
+                    funciona a homologação?</button></h3>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Sistemas conectados à rede passam por procedimentos junto à distribuidora
+                    conforme as regras vigentes. As etapas e documentos dependem do projeto e da concessionária.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">Vocês
+                    fazem manutenção de sistemas já instalados?</button></h3>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Sim. A HelioServ atua também com manutenção e suporte. O atendimento
+                    começa com uma avaliação do sistema e da necessidade apresentada.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">Vocês
+                    trabalham com boilers?</button></h3>
+                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Sim. A HelioServ oferece automação de apoio elétrico para boilers, com
+                    avaliação técnica da instalação para definir a solução adequada.</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- CONTATO -->
     <section id="contato" class="section">
       <div class="container">
         <div class="contact-panel shadow-lg reveal">
           <div class="row g-0">
-            <div class="col-lg-7 p-4 p-md-5"><span class="section-kicker">Próximo passo</span>
+            <div class="col-lg-7 p-4 p-md-5">
+              <span class="section-kicker">Próximo passo</span>
               <h2 class="section-title">Conte o que você precisa.</h2>
-              <p class="text-secondary">Envie uma mensagem ou fale diretamente pelo WhatsApp.</p>
-              <form id="contactForm" action="https://formspree.io/f/xvgzgleb" method="POST">
+              <p class="text-secondary">Preencha o formulário que retornamos pelo WhatsApp ou telefone.</p>
+              <form id="contactForm" action="https://formspree.io/f/xvgzgleb" method="POST" novalidate>
+                <input type="hidden" name="_subject" value="Novo contato pelo site HelioServ">
+                <!-- honeypot anti-spam (Formspree descarta envios com este campo preenchido) -->
+                <div class="hp-field" aria-hidden="true">
+                  <label for="gotcha">Não preencha</label>
+                  <input type="text" id="gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+                </div>
                 <div class="row g-3">
-                  <div class="col-md-6"><label for="name" class="form-label">Nome</label><input id="name" name="name"
-                      class="form-control form-control-lg" required></div>
-                  <div class="col-md-6"><label for="email" class="form-label">E-mail</label><input id="email"
-                      name="email" type="email" class="form-control form-control-lg" required></div>
-                  <div class="col-12"><label for="interest" class="form-label">Interesse</label><select id="interest"
-                      name="interest" class="form-select form-select-lg">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label">Nome</label>
+                    <input id="name" name="nome" class="form-control form-control-lg" autocomplete="name" required>
+                    <div class="invalid-feedback">Informe seu nome.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">WhatsApp / telefone</label>
+                    <input id="phone" name="telefone" type="tel" class="form-control form-control-lg"
+                      autocomplete="tel" inputmode="tel" placeholder="(11) 90000-0000" pattern="[\d\s()+\-]{10,}"
+                      required>
+                    <div class="invalid-feedback">Informe um telefone com DDD.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">E-mail <span class="text-secondary">(opcional)</span></label>
+                    <input id="email" name="email" type="email" class="form-control form-control-lg"
+                      autocomplete="email">
+                    <div class="invalid-feedback">E-mail inválido.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="city" class="form-label">Cidade</label>
+                    <input id="city" name="cidade" class="form-control form-control-lg" autocomplete="address-level2"
+                      placeholder="Itu">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="interest" class="form-label">Interesse</label>
+                    <select id="interest" name="interesse" class="form-select form-select-lg">
                       <option>Projeto de energia solar</option>
                       <option>Manutenção</option>
                       <option>Equipamentos</option>
                       <option>Automação para boiler</option>
                       <option>Outro</option>
-                    </select></div>
-                  <div class="col-12"><label for="message" class="form-label">Mensagem</label><textarea id="message"
-                      name="message" rows="4" class="form-control" required></textarea></div>
-                  <div class="col-12"><button class="btn btn-warning btn-lg w-100 fw-semibold" type="submit">Enviar
-                      mensagem <i class="bi bi-send ms-2"></i></button></div>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="bill" class="form-label">Conta média <span class="text-secondary">(opcional)</span></label>
+                    <input id="bill" name="conta_media" class="form-control form-control-lg" inputmode="numeric"
+                      placeholder="R$ 500">
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea id="message" name="mensagem" rows="4" class="form-control" required></textarea>
+                    <div class="invalid-feedback">Escreva sua mensagem.</div>
+                  </div>
+                  <div class="col-12">
+                    <p class="privacy-note mb-0"><i class="bi bi-lock me-1" aria-hidden="true"></i>Seus dados são usados
+                      apenas para responder a este contato e não são compartilhados com terceiros.</p>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-warning btn-lg w-100 fw-semibold" type="submit">Enviar mensagem <i
+                        class="bi bi-send ms-2" aria-hidden="true"></i></button>
+                  </div>
                 </div>
               </form>
             </div>
-            <aside class="col-lg-5 contact-info p-4 p-md-5 text-white"><span class="contact-label">Atendimento
-                direto</span>
+            <aside class="col-lg-5 contact-info p-4 p-md-5 text-white">
+              <span class="contact-label">Atendimento direto</span>
               <h3 class="display-6 fw-bold mt-2">Vamos conversar sobre seu projeto?</h3>
               <p class="opacity-75">Para orçamento e dúvidas, escolha o canal que preferir.</p>
-              <div class="contact-line"><i class="bi bi-geo-alt-fill"></i><span>Jardim Santa Rosa • Itu/SP</span></div><a class="contact-line" href="tel:+5511975819253"><i class="bi bi-telephone-fill"></i><span>Hélio • (11) 97581-9253</span></a><a class="contact-line" href="tel:+5511999670155"><i class="bi bi-telephone-fill"></i><span>Lucimara • (11) 99967-0155</span></a><a class="contact-line js-whatsapp"
-                data-message="Olá, vim pelo site da HelioServ e gostaria de conversar sobre um projeto." href="#"><i
-                  class="bi bi-whatsapp"></i><span>Conversar no WhatsApp</span></a>
-              <div class="socials mt-4"><a href="https://www.facebook.com/HelioServItu" target="_blank" rel="noopener"
-                  aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="https://www.instagram.com/helioserv/"
-                  target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a></div>
+              <div class="contact-line"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i><span>Jardim Santa Rosa •
+                  Itu/SP</span></div>
+              <a class="contact-line" href="tel:+5511975819253"><i class="bi bi-telephone-fill"
+                  aria-hidden="true"></i><span>Hélio • (11) 97581-9253</span></a>
+              <a class="contact-line" href="tel:+5511999670155"><i class="bi bi-telephone-fill"
+                  aria-hidden="true"></i><span>Lucimara • (11) 99967-0155</span></a>
+              <a class="contact-line js-whatsapp" href="https://wa.me/5511975819253" target="_blank" rel="noopener"
+                data-message="Olá, vim pelo site da HelioServ e gostaria de conversar sobre um projeto."><i
+                  class="bi bi-whatsapp" aria-hidden="true"></i><span>Conversar no WhatsApp</span></a>
+              <div class="socials mt-4">
+                <a href="https://www.facebook.com/HelioServItu" target="_blank" rel="noopener" aria-label="Facebook"><i
+                    class="bi bi-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/helioserv/" target="_blank" rel="noopener" aria-label="Instagram"><i
+                    class="bi bi-instagram" aria-hidden="true"></i></a>
+              </div>
             </aside>
           </div>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="footer py-5">
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-5">
-          <div class="fs-3 fw-bold"><i class="bi bi-sun-fill text-warning me-2"></i>HelioServ</div>
-          <p class="text-white-50 mt-3">Há mais de 14 anos com soluções em energia solar, instalação, manutenção e apoio elétrico para boilers em Itu/SP.</p>
+          <div class="fs-3 fw-bold"><i class="bi bi-sun-fill text-warning me-2" aria-hidden="true"></i>HelioServ</div>
+          <p class="text-white-50 mt-3">Há mais de 14 anos com soluções em energia solar, instalação, manutenção e
+            apoio elétrico para boilers em Itu/SP e região.</p>
         </div>
-        <div class="col-6 col-lg-3">
-          <h3 class="h6 text-uppercase">Navegação</h3><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a
-            href="#simulador">Simulador</a><a href="#faq">FAQ</a>
-        </div>
+        <nav class="col-6 col-lg-3" aria-label="Rodapé">
+          <h3 class="h6 text-uppercase">Navegação</h3>
+          <a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#simulador">Simulador</a><a
+            href="#faq">FAQ</a><a href="#contato">Contato</a>
+        </nav>
         <div class="col-6 col-lg-4">
-          <h3 class="h6 text-uppercase">Contato</h3><a href="tel:+5511975819253"><i class="bi bi-telephone me-2"></i>Hélio • (11) 97581-9253</a><a href="tel:+5511999670155"><i class="bi bi-telephone me-2"></i>Lucimara • (11) 99967-0155</a><a href="https://www.instagram.com/helioserv/" target="_blank"
-            rel="noopener">Instagram</a>
+          <h3 class="h6 text-uppercase">Contato</h3>
+          <a href="tel:+5511975819253"><i class="bi bi-telephone me-2" aria-hidden="true"></i>Hélio • (11)
+            97581-9253</a>
+          <a href="tel:+5511999670155"><i class="bi bi-telephone me-2" aria-hidden="true"></i>Lucimara • (11)
+            99967-0155</a>
+          <a href="https://www.instagram.com/helioserv/" target="_blank" rel="noopener"><i class="bi bi-instagram me-2"
+              aria-hidden="true"></i>Instagram</a>
+          <a href="https://www.facebook.com/HelioServItu" target="_blank" rel="noopener"><i class="bi bi-facebook me-2"
+              aria-hidden="true"></i>Facebook</a>
         </div>
       </div>
       <hr class="border-secondary my-4">
-      <p class="text-center text-white-50 mb-0">© <span id="year"></span> HelioServ. Todos os direitos reservados.</p>
+      <p class="text-center text-white-50 mb-0">© <span id="year">2026</span> HelioServ. Todos os direitos reservados.
+      </p>
     </div>
   </footer>
-  <a class="floating-whatsapp js-whatsapp"
-    data-message="Olá, vim pelo site da HelioServ e gostaria de solicitar um orçamento." href="#"
-    aria-label="Falar no WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+  <a class="floating-whatsapp js-whatsapp" href="https://wa.me/5511975819253" target="_blank" rel="noopener"
+    data-message="Olá, vim pelo site da HelioServ e gostaria de solicitar um orçamento."
+    aria-label="Falar no WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+
   <div id="notification" class="notification" role="status" aria-live="polite"></div>
-  <div class="modal fade" id="serviceModal" tabindex="-1">
+
+  <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content service-modal"><button type="button" class="btn-close" data-bs-dismiss="modal"
-          aria-label="Fechar"></button>
+      <div class="modal-content service-modal">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         <div id="serviceModalBody"></div>
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>

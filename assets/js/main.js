@@ -1,27 +1,254 @@
-const phone='5511975819253';
-const services=[
- {title:'Instalação de sistemas',icon:'bi-sun-fill',text:'Solução fotovoltaica planejada para o perfil do imóvel.',image:'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=82',items:['Levantamento das necessidades','Dimensionamento da solução','Instalação dos componentes','Orientação para acompanhamento do sistema']},
- {title:'Manutenção e suporte',icon:'bi-tools',text:'Cuidados para preservar segurança e desempenho do sistema.',image:'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=82',items:['Inspeção visual e técnica','Verificação de componentes','Diagnóstico de falhas','Orientação de manutenção preventiva']},
- {title:'Automação para boilers',icon:'bi-thermometer-sun',text:'Automação de apoio elétrico para complementar e controlar o aquecimento de boilers.',image:'https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=1200&q=82',items:['Apoio elétrico automatizado','Controle conforme necessidade','Integração com o sistema existente','Avaliação técnica da instalação']},
- {title:'Equipamentos e soluções',icon:'bi-battery-charging',text:'Componentes selecionados conforme a necessidade de cada sistema.',image:'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=82',items:['Painéis fotovoltaicos','Inversores e microinversores','Proteções e estruturas','Soluções conforme o projeto']}
-];
-const solutions={
- paineis:{title:'Painéis fotovoltaicos',image:'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1100&q=82',text:'Responsáveis por converter a radiação solar em energia elétrica. A escolha depende do dimensionamento e das condições do projeto.',items:['Diferentes potências e tecnologias','Seleção conforme dimensionamento','Aplicações residenciais e comerciais']},
- inversores:{title:'Inversores e microinversores',image:'https://images.unsplash.com/photo-1624397640148-949b1732bb0a?auto=format&fit=crop&w=1100&q=82',text:'Fazem a conversão da energia gerada pelos módulos para uso na instalação elétrica e podem oferecer recursos de monitoramento.',items:['Configuração conforme o sistema','Opções centralizadas ou distribuídas','Monitoramento conforme equipamento']},
- protecao:{title:'Proteções elétricas',image:'https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1100&q=82',text:'Elementos de proteção fazem parte de uma instalação organizada e devem ser especificados de acordo com o projeto.',items:['Proteções aplicáveis ao sistema','Organização dos circuitos','Dimensionamento técnico']},
- estruturas:{title:'Estruturas de fixação',image:'https://images.unsplash.com/photo-1497440001374-f26997328c1b?auto=format&fit=crop&w=1100&q=82',text:'A fixação deve considerar o tipo de cobertura, disposição dos módulos e condições do local.',items:['Soluções para diferentes coberturas','Posicionamento planejado','Materiais adequados à aplicação']},
- boilers:{title:'Automação de apoio para boilers',image:'https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=1100&q=82',text:'A HelioServ também atua com automação de apoio elétrico para boilers, oferecendo uma solução complementar para o controle do aquecimento.',items:['Apoio elétrico automatizado','Integração conforme a instalação existente','Avaliação técnica antes da configuração']}
-};
-const faqs=[['Quanto posso economizar com energia solar?','Não existe um percentual único para todos os projetos. A economia depende de consumo, tarifa, dimensionamento, geração, regras aplicáveis e características do imóvel. Por isso, o ideal é realizar uma análise individual.'],['Energia solar funciona em dias nublados?','Sim. Os módulos podem gerar energia com radiação difusa, porém a geração tende a ser menor do que em condições de maior incidência solar.'],['Quanto tempo leva a instalação?','O prazo varia conforme porte, complexidade, disponibilidade de materiais e etapas administrativas do projeto. A previsão correta deve ser informada após análise.'],['Preciso trocar meu telhado?','Não necessariamente. É importante avaliar as condições da cobertura e da estrutura antes da instalação para definir a solução adequada.'],['Como funciona a homologação?','Sistemas conectados à rede passam por procedimentos junto à distribuidora conforme as regras vigentes. As etapas e documentos dependem do projeto e da concessionária.'],['Vocês fazem manutenção de sistemas já instalados?','A HelioServ atua também com manutenção e suporte. O atendimento começa com uma avaliação do sistema e da necessidade apresentada.'],['Vocês trabalham com boilers?','Sim. A HelioServ oferece automação de apoio elétrico para boilers, com avaliação técnica da instalação para definir a solução adequada.']];
-function whatsapp(message){window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`,'_blank','noopener,noreferrer')}
-document.querySelectorAll('.js-whatsapp').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();whatsapp(el.dataset.message||'Olá, gostaria de fazer um orçamento!')}));
-document.getElementById('serviceGrid').innerHTML=services.map((s,i)=>`<div class="col-md-6 col-xl-3 reveal"><article class="service-card" data-service="${i}" role="button" tabindex="0"><div class="icon-box"><i class="bi ${s.icon}"></i></div><h3>${s.title}</h3><p>${s.text}</p><span class="card-link">Ver detalhes <i class="bi bi-arrow-up-right"></i></span></article></div>`).join('');
-const modal=new bootstrap.Modal('#serviceModal');function showService(i){const s=services[i];document.getElementById('serviceModalBody').innerHTML=`<div class="modal-hero" style="background-image:url('${s.image}')"><div><span class="section-kicker text-warning">Serviço HelioServ</span><h2 class="fw-bold">${s.title}</h2></div></div><div class="modal-body-custom"><p class="lead text-secondary">${s.text}</p><h3 class="h6 text-uppercase fw-bold mt-4">O que pode fazer parte da solução</h3><ul class="list-unstyled">${s.items.map(x=>`<li><i class="bi bi-check2-circle text-warning me-2"></i>${x}</li>`).join('')}</ul><button class="btn btn-warning btn-lg w-100 mt-3" id="modalWhatsapp"><i class="bi bi-whatsapp me-2"></i>Quero falar sobre este serviço</button></div>`;document.getElementById('modalWhatsapp').onclick=()=>whatsapp(`Olá, tenho interesse em ${s.title.toLowerCase()} e gostaria de mais informações.`);modal.show()}
-document.querySelectorAll('[data-service]').forEach(el=>{el.onclick=()=>showService(el.dataset.service);el.onkeydown=e=>{if(e.key==='Enter')showService(el.dataset.service)}});
-function renderSolution(key){const s=solutions[key];document.getElementById('solutionContent').innerHTML=`<div class="solution-inner"><img src="${s.image}" alt="${s.title}" loading="lazy"><div class="solution-text"><span class="section-kicker">Solução</span><h3>${s.title}</h3><p class="text-secondary">${s.text}</p><ul class="list-unstyled">${s.items.map(x=>`<li><i class="bi bi-check2-circle me-2"></i>${x}</li>`).join('')}</ul><button class="btn btn-outline-dark rounded-pill mt-2 js-solution-contact">Consultar esta solução <i class="bi bi-arrow-right ms-2"></i></button></div></div>`;document.querySelector('.js-solution-contact').onclick=()=>whatsapp(`Olá, gostaria de informações sobre ${s.title.toLowerCase()}.`)}renderSolution('paineis');
-document.querySelectorAll('.solution-tab').forEach(btn=>btn.onclick=()=>{document.querySelectorAll('.solution-tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');renderSolution(btn.dataset.solution)});
-document.getElementById('faqAccordion').innerHTML=faqs.map((f,i)=>`<div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button ${i?'collapsed':''}" type="button" data-bs-toggle="collapse" data-bs-target="#faq${i}">${f[0]}</button></h3><div id="faq${i}" class="accordion-collapse collapse ${i===0?'show':''}" data-bs-parent="#faqAccordion"><div class="accordion-body">${f[1]}</div></div></div>`).join('');
-const range=document.getElementById('billRange');const brl=n=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0}).format(n);function updateCalc(){const v=+range.value;document.getElementById('billValue').textContent=v.toLocaleString('pt-BR');document.getElementById('monthlyBill').textContent=`${brl(v)}/mês`}range.oninput=updateCalc;updateCalc();document.querySelector('.js-sim-whatsapp').onclick=()=>whatsapp(`Olá, usei o simulador do site. Minha conta média é de aproximadamente ${brl(+range.value)} por mês e gostaria de uma análise personalizada.`);
-document.getElementById('year').textContent=new Date().getFullYear();const navCollapse=document.getElementById('navbarMenu');document.querySelectorAll('#navbarMenu .nav-link').forEach(link=>link.addEventListener('click',()=>{if(innerWidth<992&&navCollapse.classList.contains('show'))bootstrap.Collapse.getOrCreateInstance(navCollapse).hide()}));
-const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-const form=document.getElementById('contactForm'),notice=document.getElementById('notification');function notify(message,type){notice.textContent=message;notice.className=`notification ${type} show`;setTimeout(()=>notice.classList.remove('show'),4000)}form.addEventListener('submit',async e=>{e.preventDefault();const button=form.querySelector('button[type=submit]'),label=button.innerHTML;button.disabled=true;button.textContent='Enviando...';try{const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});if(!response.ok)throw new Error();form.reset();notify('Mensagem enviada com sucesso!','success')}catch(err){notify('Não foi possível enviar. Você também pode falar pelo WhatsApp.','error')}finally{button.disabled=false;button.innerHTML=label}});
+/* ==========================================================================
+   HelioServ — comportamento da página
+   ========================================================================== */
+(() => {
+  'use strict';
+
+  // ---------- Configuração ----------
+  const WHATSAPP_PHONE = '5511975819253'; // Hélio — mesmo número do Schema e do rodapé
+
+  // Premissas do simulador (ajuste aqui se precisar)
+  const SIM = {
+    sunHours: 4.9,         // irradiação média diária em Itu/SP (kWh/m²/dia, CRESESB)
+    performance: 0.80,     // perdas típicas (temperatura, cabos, inversor, sujeira)
+    minimumKwh: 50,        // custo de disponibilidade — ligação bifásica
+    panelWatts: 580,       // potência de uma placa de referência
+    panelArea: 2.6,        // m² por placa, já com folga de instalação
+  };
+
+  const SERVICES = {
+    instalacao: {
+      title: 'Instalação de sistemas',
+      text: 'Solução fotovoltaica planejada para o perfil do imóvel.',
+      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80',
+      items: ['Levantamento das necessidades', 'Dimensionamento da solução', 'Instalação dos componentes', 'Orientação para acompanhamento do sistema'],
+    },
+    manutencao: {
+      title: 'Manutenção e suporte',
+      text: 'Cuidados para preservar segurança e desempenho do sistema.',
+      image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=80',
+      items: ['Inspeção visual e técnica', 'Verificação de componentes', 'Diagnóstico de falhas', 'Orientação de manutenção preventiva'],
+    },
+    boilers: {
+      title: 'Automação para boilers',
+      text: 'Automação de apoio elétrico para complementar e controlar o aquecimento de boilers.',
+      image: 'https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=1200&q=80',
+      items: ['Apoio elétrico automatizado', 'Controle conforme necessidade', 'Integração com o sistema existente', 'Avaliação técnica da instalação'],
+    },
+    equipamentos: {
+      title: 'Equipamentos e soluções',
+      text: 'Componentes selecionados conforme a necessidade de cada sistema.',
+      image: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=80',
+      items: ['Painéis fotovoltaicos', 'Inversores e microinversores', 'Proteções e estruturas', 'Soluções conforme o projeto'],
+    },
+  };
+
+  const $ = (sel, root = document) => root.querySelector(sel);
+  const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+
+  // ---------- WhatsApp ----------
+  const whatsappUrl = (message) =>
+    `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(message)}`;
+
+  function openWhatsapp(message) {
+    window.open(whatsappUrl(message), '_blank', 'noopener,noreferrer');
+  }
+
+  // Os links já têm href real (funcionam sem JS); aqui só acrescentamos a mensagem.
+  document.addEventListener('click', (e) => {
+    const el = e.target.closest('.js-whatsapp');
+    if (!el) return;
+    e.preventDefault();
+    openWhatsapp(el.dataset.message || 'Olá, gostaria de fazer um orçamento!');
+  });
+
+  // ---------- Modal de serviços ----------
+  const modalEl = $('#serviceModal');
+  const modal = new bootstrap.Modal(modalEl);
+  const modalBody = $('#serviceModalBody');
+
+  function buildServiceModal(s) {
+    const frag = document.createDocumentFragment();
+
+    const hero = document.createElement('div');
+    hero.className = 'modal-hero';
+    hero.style.backgroundImage = `url("${s.image}")`;
+    hero.innerHTML = '<div><span class="section-kicker text-warning">Serviço HelioServ</span><h2 class="fw-bold" id="serviceModalTitle"></h2></div>';
+    $('h2', hero).textContent = s.title;
+
+    const body = document.createElement('div');
+    body.className = 'modal-body-custom';
+    body.innerHTML = `
+      <p class="lead text-secondary"></p>
+      <h3 class="h6 text-uppercase fw-bold mt-4">O que pode fazer parte da solução</h3>
+      <ul class="list-unstyled"></ul>
+      <button type="button" class="btn btn-warning btn-lg w-100 mt-3 js-whatsapp">
+        <i class="bi bi-whatsapp me-2" aria-hidden="true"></i>Quero falar sobre este serviço
+      </button>`;
+    $('p', body).textContent = s.text;
+    const ul = $('ul', body);
+    s.items.forEach((item) => {
+      const li = document.createElement('li');
+      li.innerHTML = '<i class="bi bi-check2-circle text-warning me-2" aria-hidden="true"></i>';
+      li.append(item);
+      ul.append(li);
+    });
+    $('.js-whatsapp', body).dataset.message =
+      `Olá, tenho interesse em ${s.title.toLowerCase()} e gostaria de mais informações.`;
+
+    frag.append(hero, body);
+    return frag;
+  }
+
+  $$('[data-service]').forEach((card) => {
+    card.addEventListener('click', () => {
+      const s = SERVICES[card.dataset.service];
+      if (!s) return;
+      modalBody.replaceChildren(buildServiceModal(s));
+      modal.show(card);
+    });
+  });
+
+  // ---------- Abas de componentes (padrão WAI-ARIA tabs) ----------
+  const tabs = $$('.solution-tab');
+
+  function selectTab(tab, focus = false) {
+    tabs.forEach((t) => {
+      const active = t === tab;
+      t.classList.toggle('active', active);
+      t.setAttribute('aria-selected', String(active));
+      t.tabIndex = active ? 0 : -1;
+      $(`#${t.getAttribute('aria-controls')}`).hidden = !active;
+    });
+    if (focus) tab.focus();
+  }
+
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', () => selectTab(tab));
+    tab.addEventListener('keydown', (e) => {
+      const keys = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 };
+      if (!(e.key in keys)) return;
+      e.preventDefault();
+      selectTab(tabs[(keys[e.key] + tabs.length) % tabs.length], true);
+    });
+  });
+
+  // ---------- Simulador ----------
+  const range = $('#billRange');
+  const tariffInput = $('#tariff');
+  const fmtBRL = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+  const fmtNum = (n, d = 0) => n.toLocaleString('pt-BR', { minimumFractionDigits: d, maximumFractionDigits: d });
+
+  function estimate(bill, tariff) {
+    const kwh = bill / tariff;
+    const toGenerate = Math.max(kwh - SIM.minimumKwh, 0);
+    const kwpNeeded = toGenerate / (SIM.sunHours * 30 * SIM.performance);
+    const panels = Math.max(Math.ceil((kwpNeeded * 1000) / SIM.panelWatts), 1);
+    const kwp = (panels * SIM.panelWatts) / 1000;
+    return { kwh, panels, kwp, area: panels * SIM.panelArea };
+  }
+
+  function currentInputs() {
+    const bill = Number(range.value);
+    let tariff = Number(String(tariffInput.value).replace(',', '.'));
+    if (!Number.isFinite(tariff) || tariff < 0.3) tariff = 1;
+    return { bill, tariff };
+  }
+
+  function updateSimulator() {
+    const { bill, tariff } = currentInputs();
+    const r = estimate(bill, tariff);
+    $('#billValue').textContent = fmtNum(bill);
+    $('#estKwh').textContent = `${fmtNum(Math.round(r.kwh / 10) * 10)} kWh/mês`;
+    $('#estKwp').textContent = `${fmtNum(r.kwp, 2)} kWp`;
+    $('#estPanels').textContent = `${r.panels} placas`;
+    $('#estArea').textContent = `~${fmtNum(Math.ceil(r.area))} m²`;
+    return { bill, tariff, ...r };
+  }
+
+  range.addEventListener('input', updateSimulator);
+  tariffInput.addEventListener('input', updateSimulator);
+  updateSimulator();
+
+  $('.js-sim-whatsapp').addEventListener('click', () => {
+    const r = updateSimulator();
+    openWhatsapp(
+      `Olá, usei o simulador do site da HelioServ.\n` +
+      `• Conta média: ${fmtBRL.format(r.bill)}/mês\n` +
+      `• Consumo estimado: ~${fmtNum(Math.round(r.kwh))} kWh/mês\n` +
+      `• Sistema estimado: ${fmtNum(r.kwp, 2)} kWp (${r.panels} placas)\n` +
+      `Gostaria de uma análise personalizada.`
+    );
+  });
+
+  // ---------- Navegação ----------
+  $('#year').textContent = new Date().getFullYear();
+
+  const navCollapse = $('#navbarMenu');
+  $$('#navbarMenu .nav-link').forEach((link) =>
+    link.addEventListener('click', () => {
+      if (navCollapse.classList.contains('show')) {
+        bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
+      }
+    })
+  );
+
+  // ---------- Animação de entrada ----------
+  const reveals = $$('.reveal');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach((el) => observer.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add('visible'));
+  }
+
+  // ---------- Formulário de contato ----------
+  const form = $('#contactForm');
+  const notice = $('#notification');
+  let noticeTimer;
+
+  function notify(message, type) {
+    clearTimeout(noticeTimer);
+    notice.textContent = message;
+    notice.className = `notification ${type} show`;
+    noticeTimer = setTimeout(() => notice.classList.remove('show'), 5000);
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    form.classList.add('was-validated');
+    if (!form.checkValidity()) {
+      $(':invalid', form)?.focus();
+      return;
+    }
+
+    const button = $('button[type=submit]', form);
+    const label = button.innerHTML;
+    button.disabled = true;
+    button.textContent = 'Enviando...';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      form.reset();
+      form.classList.remove('was-validated');
+      notify('Mensagem enviada! Retornaremos em breve.', 'success');
+    } catch {
+      notify('Não foi possível enviar agora. Fale com a gente pelo WhatsApp.', 'error');
+    } finally {
+      button.disabled = false;
+      button.innerHTML = label;
+    }
+  });
+})();
